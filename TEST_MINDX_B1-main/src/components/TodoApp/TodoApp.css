@@ -1,0 +1,90 @@
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  margin-left: -12px;
+  width: 500px;
+  border-radius: 12px 12px 0px 0px;
+  padding: 10px;
+  background-color: #e1e1e1;
+  font-size: 18px;
+  font-weight: bold;
+}
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 5px 10px;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 2px;
+  background-color: none;
+  cursor: pointer;
+}
+
+.tasks-container {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+button.active {
+  background-color: none;
+  border-bottom: 3px solid #000df2;
+  box-sizing: border-box;
+}
+
+.completed_task {
+  text-decoration: line-through;
+}
+.languague-picker {
+  opacity: 0.2;
+}
+.languague-picker:hover {
+  opacity: 1;
+}
